@@ -1,7 +1,10 @@
 #source "https://rubygems.org"
 source "http://ruby.taobao.org"
 
-gem "rspec"
+group :test do
+  gem "rake"
+  gem "rspec"
+end
 
 group :development do
   gem 'guard'
